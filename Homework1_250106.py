@@ -1,6 +1,4 @@
 # Класс
-from tkinter.font import names
-
 
 class Hero:
 
