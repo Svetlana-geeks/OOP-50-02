@@ -15,10 +15,8 @@ class Hero:
     def is_adult(self):
         return self.lvl >= 10
 
-
     def __str__(self):
         return f' Имя: {self.name}, lvl {self.lvl}, HP: {self.HP}'
-
 
 # Объекты класса /экземпляры класса
 hero_first = Hero ("Fantom", 5, 10)
@@ -28,10 +26,11 @@ hero_forth = Hero ("Mars", 40,5)
 
 
 hero_first.introduce()
-print(f'мой уровень равен или выше 10: {hero_first.is_adult()} ')
-
+print(f'уровень героя {hero_first.name } равен или выше 10: {hero_first.is_adult()} ')
+print('-------------')
 hero_second.introduce()
-print(f'мой уровень равен или выше 10: {hero_second.is_adult()} ')
+print(f'уровень героя {hero_second.name } равен или выше 10: {hero_second.is_adult()} ')
 
+print('-------------')
 print(hero_third)
 print(hero_forth)
