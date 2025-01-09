@@ -20,7 +20,7 @@ class Hero:
         return print(f"{self.name} делает первый шаг")
 
     def attack(self):
-        return print(f"{self.name} базавая атака")
+        return print(f"{self.name} базoвая атака")
 
     def rest(self):
         self.hp += random.randint(0, 100)
