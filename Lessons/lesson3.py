@@ -24,12 +24,12 @@ import random
 #
 #     def defence(self):
 #         if self._luck >= 20:
-#             return print (f"{self.name} крит атака")
+#             return print (f"{self.name} успешно защищается")
 #         else:
-#             return print(f"{self.name} базовая атака")
+#             return print(f"{self.name} не смог защититься")
 #
 #     def attack(self):
-#         if self._luck >= 20:
+#         if self.__crit_dmg >= 30:
 #             return print (f"{self.name} крит атака")
 #         else:
 #             return print(f"{self.name} базовая атака")
@@ -37,7 +37,7 @@ import random
 # kirito = Hero("Kirito", 100, 1)
 #
 # #print(kirito._luck)
-# print(dir(kirito))
+# print(dir(kirito)) #можно увидеть все защищенные элементы
 # print(kirito._Hero__crit_dmg)
 # print(kirito._Hero__heal_hp())
 
