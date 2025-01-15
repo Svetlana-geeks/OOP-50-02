@@ -9,13 +9,15 @@ class Hero:
 
     def get_random_int(self):
         return self.__random_int  # Метод для получения значения приватного атрибута
-
+    print (1)
     def attack(self):
         print(f"{self.name} атакует!")
 
+    print(2)
     def protection(self):
         print(f"{self.name} защищается!")
 
+    print(3)
     def rest(self):
         print(f"{self.name} берет паузу")
 
@@ -61,3 +63,7 @@ class Hero(ABC):
 
         def unique_scream(self):
             print("смех")
+
+    # allex = Jester ("Test", 100, 1)
+    # attack()
+    print(allex)
