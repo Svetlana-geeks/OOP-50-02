@@ -14,13 +14,11 @@ class Jester(Hero):
         random_number = self.get_random_int()
         if random_number == 1:
             self.attack()
-            print(f'{self.name} {self.attack}')
         elif random_number == 2:
             self.protection()
-            print(f'{self.name} {self.protection}')
         else:
             self.rest()
-            print(f'{self.name} {self.rest}')
+
 
 jester = Jester("John", 10, 50)
 print(jester.name)  # Выведет: john
@@ -29,4 +27,4 @@ jester.unique_scream()
 jester.unique_attack()
 jester.rest()
 jester.protection()
-print (jester.action())
+jester.action()
