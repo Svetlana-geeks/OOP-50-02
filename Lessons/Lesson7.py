@@ -112,3 +112,14 @@ def add_user(name, age, hoby):
 add_user("Ardager", 26, "спать")
 
 db.close()
+
+# добавила функцию поиска по номеру id=1
+def detail_view_user_by_id():
+    cursor.execute("""
+        SELECT * FORM users WHERE id = 1
+        
+                   """)
+    db.commit()
+
+
+detail_view_user_by_id()
